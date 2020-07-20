@@ -291,6 +291,30 @@ rules:
 
 Note: remove the whole rules section when you're not using any rules.
 
+### `prefixes` (default: none)
+
+Enhancement to support Cascading Auto-Merge of 'named' branches
+
+Define the 'prefix' targets that the cascading auto-merge will 'trigger' on.
+
+Sample branch names:
+
+- release/1.0.1.rc.1 (prefix = `release`)
+- feature/1.0.2 (prefix = `feature`)
+
+Some Notes:
+
+- In order for this to function properly the 'deleteBranchAfterMerge' parameter should be set to 'false'
+- Protect the branch from un approved merging, since that could prevent this app from triggering the auto-merge
+
+```yaml
+prefixes:
+- bugfix
+- feature
+- hotfix
+- release
+```
+
 ## Development
 
 ### Setup
