@@ -171,7 +171,18 @@ With this definition we can predict the outcome of sample [Merge-Scenarios](#Mer
 
 ## Merge-Scenarios
 
-A couple of merge scenarios and the resulting behavior of the **cascading auto-merge feature**.
+A couple of merge scenarios and the resulting behavior of the **cascading auto-merge feature**. The 
+
+(![Sample PR Scenarios Preview](https://user-images.githubusercontent.com/863198/87977967-9ebbb780-ca9d-11ea-8547-8e0e4ab6d897.png))
+
+[top](#TOC) :arrow_up:
+
+---
+
+### In Addition - Some More Detailed Scenarios
+
+<details>
+  <summary>Sample PR Scenarios Preview</summary>
 
 ### Sample semantic release versions
 
@@ -199,15 +210,6 @@ A couple of merge scenarios and the resulting behavior of the **cascading auto-m
 | 8 | 2.0.1-beta.1 -> development | standard Git workflow | :white_check_mark: | :x:                    | In Original PR, no comment about cascading PR | is latest release, no subsequent releases                                    |
 | 9 | 1.2 -> 1.1         | back porting a change | :white_check_mark:       | :white_check_mark:        | In Original PR (msg: created cascading PR #)  | cascading merge triggered, subsequent release will be merged, no different from merging to 'development' |                                  |
 
-[top](#TOC) :arrow_up:
+</details>
 
 ## Appendix
-
-### Pull-Request-Scenarios
-
-<details>
-  <summary>Sample PR Scenarios Preview</summary>
-
-(![Sample PR Scenarios Preview](https://user-images.githubusercontent.com/863198/87977967-9ebbb780-ca9d-11ea-8547-8e0e4ab6d897.png))
-
-</details>
